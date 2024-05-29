@@ -65,12 +65,6 @@ function displayWeather(data) {
         weatherIcon.alt = description;
 
         showImage();
-        if (data.main.temp<300){
-            document.body.style.backgroundColor = "aqua";
-    }
-        else{
-            document.body.style.backgroundColor = "red";
-        }
 }
 
 function displayHourlyForecast(hourlyData) {
