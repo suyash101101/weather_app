@@ -72,6 +72,7 @@ function displayWeather(data) {
         }
 
         showImage();
+    }
 }
 
 function displayHourlyForecast(hourlyData) {
@@ -100,4 +101,4 @@ function displayHourlyForecast(hourlyData) {
 
 function showImage() {
     const weatherIcon = document.getElementById('weather-icon');
-    weatherIcon.style.display = 'block'; 
+    weatherIcon.style.display = 'block'; }
