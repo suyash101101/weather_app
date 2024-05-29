@@ -1,5 +1,5 @@
 function getWeather() {
-    const apiKey = 'YOUR-API-KEY';
+    const apiKey = '8b110ebe58e66c1df7662d3ea0438724';
     const city = document.getElementById('city').value;
 
     if (!city) {
@@ -63,6 +63,13 @@ function displayWeather(data) {
         weatherInfoDiv.innerHTML = weatherHtml;
         weatherIcon.src = iconUrl;
         weatherIcon.alt = description;
+
+        if (data.main.tem>300){
+            document.body.style.backgroundColor = "aqua";
+        }
+        else{
+            document.body.style.backgroundColor = "red";
+        }
 
         showImage();
 }
