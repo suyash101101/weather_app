@@ -58,18 +58,18 @@ function displayWeather(data) {
             <p>${cityName}</p>
             <p>${description}</p>
         `;
+        if(data.main.temp<300){
+            document.body.style.backgroundColor = "aqua";
+        }
+        else{
+            document.body.style.backgroundColor = "red";
+        }
 
         tempDivInfo.innerHTML = temperatureHTML;
         weatherInfoDiv.innerHTML = weatherHtml;
         weatherIcon.src = iconUrl;
         weatherIcon.alt = description;
 
-        if (data.main.tem>300){
-            document.body.style.backgroundColor = "aqua";
-        }
-        else{
-            document.body.style.backgroundColor = "red";
-        }
 
         showImage();
     }
